@@ -28,11 +28,36 @@
 #pragma config BORV = HI        // Brown-out Reset Voltage Selection (Brown-out Reset Voltage (Vbor), high trip point selected.)
 #pragma config LVP = OFF        // Low-Voltage Programming Enable (High-voltage on MCLR/VPP must be used for programming)
 
+
+#define _XTAL_FREQ  8000000 
+#define LED RA6
+
 // #pragma config statements should precede project file includes.
 // Use project enums instead of #define for ON and OFF.
 
 #include <xc.h>
 
+void Wait(unsigned int num){
+    int i ;
+
+    for (i=0 ; i<num ; i++){
+        __delay_ms(10);
+    }
+}
+
 void main(void) {
-    return;
+    OSCCON = 0b01110010;
+    ANSELA = 0b00000000;
+    ANSELB = 0b00000000;
+    TRISA  = 0b00000000;
+    TRISB  = 0b00000000;
+    PORTA  = 0b00000000;
+    PORTB  = 0b00000000;
+    
+    while(1){
+        LED = 1;
+        Wait(100);
+        LED = 0 ;
+        Wait(100);
+    }
 }

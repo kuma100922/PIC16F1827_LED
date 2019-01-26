@@ -1,0 +1,47 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"10 /Applications/microchip/xc8/v2.05/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.05/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /Applications/microchip/xc8/v2.05/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"40 /Users/endo_takumi/Development_Data/C++/LED/LED_TEST.X/newmain.c
+[v _Wait Wait `(v  1 e 1 0 ]
+"48
+[v _main main `(v  1 e 1 0 ]
+"429 /Applications/microchip/xc8/v2.05/pic/include/pic16f1827.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"491
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"1152
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1214
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1706
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2861
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2913
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"7669
+[v _RA6 RA6 `VEb  1 e 0 @102 ]
+"48 /Users/endo_takumi/Development_Data/C++/LED/LED_TEST.X/newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"63
+} 0
+"40
+[v _Wait Wait `(v  1 e 1 0 ]
+{
+"41
+[v Wait@i i `i  1 a 2 3 ]
+"40
+[v Wait@num num `ui  1 p 2 0 ]
+"46
+} 0
